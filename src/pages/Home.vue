@@ -182,13 +182,6 @@ const chartOptions = computed(() => {
           format: "${point.y}",
           rotation: "-90",
         },
-        events: {
-          click: function (event) {
-            event.point.series[1].update({
-              color: "red",
-            });
-          },
-        },
       },
     },
     series: [
@@ -201,7 +194,6 @@ const chartOptions = computed(() => {
         name: "FBA Sales",
         data: dailySales.value.fbaAmount,
         color: "#8A69E9",
-       
       },
       {
         name: "FBM Sales",
@@ -319,7 +311,6 @@ const chartOptions = computed(() => {
           </table>
         </div>
       </div>
-
     </main>
   </div>
 </template>
