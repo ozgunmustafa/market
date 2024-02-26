@@ -1,0 +1,108 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+$black: #030918;
+$white: #fff;
+$gray: #dbdbdb;
+$mainBlue:#5f9cf1;
+$strawberryRed: #f15b6a;
+
+
+$textGray: #979797;
+
+$space: 0.25rem;
+
+
+
+:root {
+    --black: #030918;
+    --white: #fff;
+    --gray: #dbdbdb;
+    --strawberry-red: #f15b6a;
+
+
+    --main-blue: #5f9cf1;
+
+    --text-gray: #979797;
+    --space: 0.25rem;
+
+    --header-height: 74px;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: var(--black);
+}
+
+h1 {
+    font-size: 2.986rem
+}
+
+h2 {
+    font-size: 2.488rem
+}
+
+h3 {
+    font-size: 2.076rem
+}
+
+h4 {
+    font-size: 1.728rem
+}
+
+h5 {
+    font-size: 1.444rem
+}
+
+h6 {
+    font-size: 1.2rem
+}
+
+p {
+    font-size: 1rem;
+}
+
+small {
+    font-size: 80%;
+}
+
+#app {
+    min-height: 100vh;
+}
+
+main {
+    padding-top: calc(var(--header-height) + 5px)
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 20% 50% 15% 15%;
+
+    &:nth-child(odd) {
+        background-color: lightgray
+    }
+}
+
+table {
+    font-family: 'calibri', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+    color: #5b5b5b;
+}
+
+td,
+th {
+    border: 1px solid transparent;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+@import 'helpers';
+@import 'components/header';
+@import 'components/loader'
